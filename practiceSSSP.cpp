@@ -60,6 +60,7 @@ int main(){
         int weight;
         cin >> from >> to >> weight;
         graph[vertexIndex[from]].push_back({vertexIndex[to], weight});
+        graph[vertexIndex[to]].push_back({vertexIndex[from], weight});
     }
 
     char sourceNode, destNode;
